@@ -410,23 +410,7 @@ document.getElementById("menu").classList.toggle("active");
 </footer>
 <!-- ===== FOOTER END ===== -->
 <script>
-// Curved text effect
-const curvedTextDiv = document.querySelector('.curved-text');
-const text = curvedTextDiv.dataset.text;
-curvedTextDiv.innerHTML = '';
 
-const radius = 120; // radius of the arc
-const startAngle = -60; 
-const endAngle = 60; 
-const angleStep = (endAngle - startAngle) / (text.length - 1);
-
-text.split('').forEach((char, i) => {
-  const span = document.createElement('span');
-  span.innerText = char;
-  const angle = startAngle + (angleStep * i);
-  span.style.transform = `rotate(${angle}deg) translate(${radius}px) rotate(${angle * -1}deg)`;
-  curvedTextDiv.appendChild(span);
-});
 </script>
 
 </body>
