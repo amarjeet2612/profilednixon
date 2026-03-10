@@ -264,25 +264,27 @@ font-size:14px;
   font-family: 'Arial Black', Gadget, sans-serif;
 }
 /* ===== LATEST NEWS 3D STYLE ===== */
+/* ===== LATEST NEWS / NAME HEADING ===== */
 .news-title{
-  text-align: center;          /* centre */
-  font-size: 36px;
-  font-weight: 900;
-  font-family: cursive;        /* cursive font */
+  width:100%;
+  text-align:center;     /* horizontal center */
+  font-size:36px;
+  font-weight:900;
+  font-family:cursive;
 
-  color: #ffffff;
+  color:#ffffff;
+  -webkit-text-stroke:1.5px #000;
 
-  /* stroke / outline */
-  -webkit-text-stroke: 1.5px #000;
-
-  /* 3D shadow effect */
+  /* clean 3D look */
   text-shadow:
-      1px 1px 0 #000,
-      2px 2px 0 #000,
-      3px 3px 6px rgba(0,0,0,0.6);
+    1px 1px 0 #000,
+    2px 2px 0 #000,
+    3px 3px 6px rgba(0,0,0,0.6);
 
-  margin: 30px auto;
-  display: block;
+  margin:30px auto 20px auto;
+
+  line-height:1.2;       /* text seedha karega */
+  display:block;
 }
   
 </style>
